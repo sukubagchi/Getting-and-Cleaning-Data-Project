@@ -52,26 +52,25 @@ There are 5 parts:
 
 1. Merges the training and the test sets to create one data set.
  In this it loads the data and then binds them using the following commands:
- ## Load Data : ```read.table```
-## Bind Data : ```rbind``` (for test and train data)
+  #### Load Data : ```read.table```
+  #### Bind Data : ```rbind``` (for test and train data)
 
 
 2. Extracts only the measurements on the mean and standard deviation for each measurement.
 Here it reads the ```features``` file and Search for matches to argument mean or standard deviation (sd)  within each element of character vector usinf the following commands:
-#Searching for Mean and SD in features: ```grep```
-#Finding rows in X matching the mean and sd from features: ```gsub```
+#### Searching for Mean and SD in features: ```grep```
+#### Finding rows in X matching the mean and sd from features: ```gsub```
 
 
 3. Uses descriptive activity names to name the activities in the data set:
-Commands used for descriptive names of columns in the data set: ```names()```
+#### Commands used for descriptive names of columns in the data set: ```names()```
 
 4. Appropriately labels the data set with descriptive activity names.
-
+#### Binding final set of data : ```cbind```
 
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-###Binding final set of data : ```cbind```
-###Finding the average based on each activity and each subject: ```aggregate```
-###Writing the final data into text file:```write.table```
+#### Finding the average based on each activity and each subject: ```aggregate```
+#### Writing the final data into text file:```write.table```
 
 ## How ```run_analysis.R``` implements the above steps:
 
