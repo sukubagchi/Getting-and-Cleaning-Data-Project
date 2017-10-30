@@ -16,3 +16,5 @@ You should create one R script called run_analysis.R that does the following.
 2. Put ```run_analysis.R``` in the parent folder of ```UCIHAR```, then set it as your working directory using ```setwd()``` function in RStudio.
 3. Run ```source("run_analysis.R")```, then it will generate a new file ```tidy_data.txt``` in your working directory.
 
+### Additional Information
+You can find additional information about the variables, data and transformations in the CodeBook.MD file.
